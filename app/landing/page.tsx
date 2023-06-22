@@ -2,9 +2,14 @@
 
 import Image from 'next/image'
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import { Divider } from '@mui/material';
 
+
+//own
 import styles from './page.module.css'
-import { Banner } from '@/app/landing/banner/Banner'; 
+import { Banner } from '@/app/landing/components/Banner'; 
+import { Social } from '@/app/landing/components/Social'; 
+
 
 export const metadata = {
   title: 'Victor Rivas | Desarrollador Full stack',
@@ -14,6 +19,9 @@ export const metadata = {
 
 export default function Landing() {
   return (
-    <Banner />
+    <>
+      <Banner />
+      <Divider/>
+    </>
   )
 }

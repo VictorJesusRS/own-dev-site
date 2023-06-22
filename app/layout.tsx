@@ -22,7 +22,7 @@ export default function RootLayout({
       </head>
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
-          <body className={lato.className}>{children}</body>
+          <body className={lato.className} style={{ height: '100vh' }}>{children}</body>
       </ThemeProvider>
     </html>
   )
