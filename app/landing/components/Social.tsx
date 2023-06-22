@@ -23,7 +23,11 @@ const Social: React.FC = () => {
                 <Grid 
                     md={6}
                     xs={12} 
-                    sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'left' }}
+                    sx={{ 
+                        flexGrow: 1, 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: { xs: 'center', md: 'left'} }}
                 >
                     <Box
                         sx={{ 
@@ -49,7 +53,12 @@ const Social: React.FC = () => {
                 <Grid 
                     md={6}
                     xs={12} 
-                    sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'right' }}
+                    sx={{ 
+                        flexGrow: 1, 
+                        display: 'flex',
+                        alignItems: 'center', 
+                        justifyContent: { xs: 'center', md: 'left'} 
+                    }}
                 >
                     <Box>
                         <Typography variant='h6'>
