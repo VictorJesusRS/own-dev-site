@@ -12,7 +12,7 @@ const LayoutService: React.FC = () => {
     const [ serviceBenefits, setServiceBenefits] = React.useState(serviceBenefitData);
     const products: Array<string> = [];
     return (
-    <Box>
+    <Box component={'section'}>
         <Box
             sx={{ py: '3rem'}}
         >

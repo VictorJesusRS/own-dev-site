@@ -36,6 +36,7 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg }) => {
             gutterBottom variant="h3" 
             color={'primary'}
             fontWeight={'bold'}
+            sx={{ mb: '2rem'}}
             >
               {model.title}
             </Typography>
