@@ -82,9 +82,9 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
 
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', backgroundColor: 'white' }}>
       <CssBaseline />
-      <AppBar component="nav" color='transparent'>
+      <AppBar component="nav" color='inherit'>
         <Toolbar 
         > 
           <Box

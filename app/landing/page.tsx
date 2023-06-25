@@ -9,7 +9,7 @@ import { Divider } from '@mui/material';
 import styles from './page.module.css'
 import { Banner } from '@/app/landing/components/Banner'; 
 import { Social } from '@/app/landing/components/Social'; 
-
+import { LayoutService } from '@/app/landing/components/services/Layout.services';
 
 export const metadata = {
   title: 'Victor Rivas | Desarrollador Full stack',
@@ -22,6 +22,9 @@ export default function Landing() {
     <>
       <Banner />
       <Divider/>
+      <LayoutService/>
+      <Divider/>
+      
     </>
   )
 }

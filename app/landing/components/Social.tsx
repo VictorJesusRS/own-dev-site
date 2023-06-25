@@ -37,7 +37,7 @@ const Social: React.FC = () => {
                         }}
                     >
                         <Typography variant='h6'>
-                            Sigueme en                         
+                            Sigueme en  -                        
                         </Typography>
                         <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN}>
                             <LinkedInIcon fontSize='large'/>
@@ -57,7 +57,7 @@ const Social: React.FC = () => {
                         flexGrow: 1, 
                         display: 'flex',
                         alignItems: 'center', 
-                        justifyContent: { xs: 'center', md: 'left'} 
+                        justifyContent: { xs: 'center', md: 'right'} 
                     }}
                 >
                     <Box>
