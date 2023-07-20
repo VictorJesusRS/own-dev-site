@@ -12,7 +12,7 @@ const LayoutService: React.FC = () => {
     const [ serviceBenefits, setServiceBenefits] = React.useState(serviceBenefitData);
     const products: Array<string> = [];
     return (
-    <Box id="services" component={'section'}>
+    <Box id="services" component={'section'} sx={{ paddingBottom: '2rem'}}>
         <Box
             sx={{ py: '3rem'}}
         >
@@ -31,17 +31,17 @@ const LayoutService: React.FC = () => {
                             key={item.title}
                             md={12}
                             xs={12} 
-                            sx={{ py: { xs: '1rem', md: 'none'}}}
+                            sx={{ py: { xs: 'none', md: 'none'}}}
                         >
                             <CardService 
                                 model={item}
-                                rightImg={ !!(index % 2) }
+                                rightImg={ !!!(index % 2) }
                             />
 
                             {
-                                index !== (serviceBenefits.length - 1) && (
-                                    <Divider variant="middle"/>
-                                )
+                                // index !== (serviceBenefits.length - 1) && (
+                                //     <Divider variant="middle"/>
+                                // )
                             }
                         </Grid>    
                     );

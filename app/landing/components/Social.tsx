@@ -36,7 +36,7 @@ const Social: React.FC = () => {
                             gap: '0.5rem'
                         }}
                     >
-                        <Typography variant='h6'>
+                        <Typography variant='h6' fontWeight={'bold'}>
                             Sigueme en  -                        
                         </Typography>
                         <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN}>
@@ -70,7 +70,7 @@ const Social: React.FC = () => {
                     }}
                 >
                     <Box>
-                        <Typography variant='h6'>
+                        <Typography variant='h6' fontWeight={'bold'}>
                             Contacto -
                             <Link 
                                 className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-opacity-75'} 

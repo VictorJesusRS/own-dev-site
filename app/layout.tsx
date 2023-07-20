@@ -30,7 +30,7 @@ export default function RootLayout({
               <header>
                 <AppBar />
               </header>
-              <Box component="main" sx={{ p: 3, height: '95%' }}>
+              <Box component="main" sx={{ p: 3, minHeight: '95%' }}>
                 <Toolbar/>
                 {children}
               </Box>

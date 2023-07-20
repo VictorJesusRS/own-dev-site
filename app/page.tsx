@@ -19,9 +19,7 @@ export default function Home() {
     <>
       {/* <LayoutPortfolio/> */}
       <Banner />
-      <Divider/>
       <LayoutService/>
-      <Divider/>
       <Footer/>
     </>
   )

@@ -11,17 +11,21 @@ const Footer: React.FC = () => {
 
     
     return (
-        <>
+        <Box>
             <Box
-                sx={{ py: '2rem' }}
-                id="contact"
+                sx={{ backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '2rem', paddingX: '2rem' }}
             >
-                <Box>
-                    <Social/>
+                <Box
+                    sx={{ py: '2rem' }}
+                    id="contact"
+                >
+                    <Box>
+                        <Social/>
+                    </Box>
+                    
                 </Box>
                 
             </Box>
-            <Divider/>
             <Box
                 sx={{ my: '1rem' }}
             >
@@ -36,8 +40,7 @@ const Footer: React.FC = () => {
                     </Link> 
                 </Typography>
             </Box>
-            <Divider/>
-        </>
+        </Box>
     )
 }
 

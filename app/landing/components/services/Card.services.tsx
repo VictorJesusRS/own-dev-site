@@ -35,6 +35,9 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg }) => {
               position: 'relative',
               minHeight: '20rem',
               height: 'auto',
+              backgroundColor: '#2196f3',
+              padding: '2rem',
+              borderRadius: '2rem 2rem 2rem 2rem'
             }}
           >
             <Image
@@ -43,24 +46,29 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg }) => {
                 width={400}
                 // fill={true}
                 alt={model.thumbAlt ?? ''}
-                style={{ width: 'auto', height: 'auto' }}
+                style={{ margin: 'auto', width: 'auto', height: '25rem' }}
+                
               />
           </Box>
 
           <CardContent
              sx={{ 
               width: { xs: '100%', md: '50%'}, 
+              padding: '2rem',
+              border: '1px solid rgba(0,0,0,0.1)',
+              borderRadius: '2rem 2rem 2rem 2rem',
+              backgroundColor: 'white'
             }}
           >
             <Typography 
             gutterBottom variant="h3" 
             color={'primary'}
             fontWeight={'bold'}
-            sx={{ mb: '2rem'}}
+            sx={{ mb: '2rem', textAlign: {xs: 'center', md: 'left'}}}
             >
               {model.title}
             </Typography>
-            <Typography variant="h5" color={'black'} component={'p'}>
+            <Typography variant="h5" component={'p'}>
               {model.subtitle}
             </Typography>
           </CardContent>
