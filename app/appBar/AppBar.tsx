@@ -28,19 +28,19 @@ const navItems = [
   }, 
   {
     name: 'Servicios',
-    path: '/aaa',
+    path: '/#services',
   }, 
-  {
-    name: 'Portafolio',
-    path: '',
-  }, 
-  {
-    name: 'Acerca de',
-    path: '',
-  }, 
+  // {
+  //   name: 'Portafolio',
+  //   path: '/#portfolio',
+  // }, 
+  // {
+  //   name: 'Acerca de',
+  //   path: '/#about',
+  // }, 
   {
     name: 'Contacto',
-    path: '',
+    path: '/#contact',
   }, 
 ];
 
@@ -56,19 +56,27 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Box className={'tw-flex tw-justify-center tw-my-2'}>
+      <Link 
+          href={`/`} 
+          underline='none' 
+      >
         <Image
             src={logoSrc}
             width={logoWidthHeight}
             height={logoWidthHeight}
             alt="isologo: victor rivas"
+            // style={{ width: 'auto', height: 'auto' }}
+            style={{ width: 'auto', height: `4rem` }}
+            priority
           />
+      </Link>
       </Box>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
             <ListItemButton className='tw-flex tw-justify-center'>
-              <Link href={item.path} underline="none" color={'inherit'}>
+              <Link href={item.path} underline="none" color={'inherit'} aria-label='link to home page'>
                 <Typography >
                   {item.name}
                 </Typography>
@@ -105,12 +113,21 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
               <MenuIcon />
             </IconButton>
             <Box>
+            <Link 
+                href={`/`} 
+                underline='none' 
+                aria-label='link to home page'
+            >
               <Image
                 src={logoSrc}
                 height={logoWidthHeight}
                 width={logoWidthHeight}
                 alt="logo: victor rivas"
+                style={{ width: 'auto', height: '4rem' }}
+                priority
               />
+            </Link> 
+       
             </Box>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               {navItems.map((item) => (

@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 
-
+import BannerImg from '@/app/landing/assets/imgs/2.svg'
 import { Social } from '@/app/landing/components/Social'; 
 
 const Banner: React.FC = () => {
@@ -40,16 +40,24 @@ const Banner: React.FC = () => {
         <Grid 
           md={4} 
           xs={12} 
-          sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}
+          sx={{ 
+            flexGrow: 1, 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: {xs: 'center', md: 'flex-start'},
+           
+          }}
         >
-          <Box paddingTop={{ md: 0, display: 'flex', position:"relative" }}>
+          <Box paddingTop={{ md: 0, display: 'flex', position:"relative",  }}>
             
             <Image
-              src={'/imgs/2.svg'}
+              src={BannerImg}
               height={400}
               width={400}
               // fill={true}
               alt='Web Atomatización Isométrica Ilustrasión'
+              style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </Box>
         </Grid>

@@ -1,23 +1,22 @@
 
 import React from 'react'
-import { ServiceBenefit } from '../types/services.types'
-import BannerImg from '@/app/landing/assets/imgs/2.svg'
+import { Project } from '../types/portfolio.types'
 
 
-export const serviceBenefitData : Array<ServiceBenefit> = [
+export const portfolioData : Array<Project> = [
     {
         title: 'Diseño y maquetado',
         subtitle: `Contamos con perfiles de diseño, maquetado y desarrollo frontend, 
         capaces de interactuar entre si buscando lograr 
         la mejor experiencia para el usuario.`,
-        thumb: BannerImg,
+        thumb: '/imgs/2.svg',
     },
     {
         title: 'Consultoría Tecnológica',
         subtitle: `Actuamos como socios tecnológicos de su empresa, brindando
          asesoramiento y apoyo en las decisiones estratégicas 
          relacionadas con tecnología y procesos.`,
-        thumb: BannerImg
+        thumb: '/imgs/2.svg'
     },
     {
         title: 'Desarrollos a Medida',
@@ -25,13 +24,13 @@ export const serviceBenefitData : Array<ServiceBenefit> = [
         Evaluamos cuál es la solución tecnológica más adecuada para la 
         resolución del problema, diseñando e implementando la misma como producto de 
         un análisis previo tendiente a arribar a la mejor solución.`,
-        thumb: BannerImg
+        thumb: '/imgs/2.svg'
     },
     {
         title: 'Soporte y Mantenimiento',
         subtitle: `Acompañamos a la empresa en su crecimiento administrando 
         la infraestructura tecnológica en base a las necesidades 
         cambiantes del mercado.`,
-        thumb: BannerImg
+        thumb: '/imgs/2.svg'
     },
 ]

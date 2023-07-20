@@ -40,13 +40,22 @@ const Social: React.FC = () => {
                             Sigueme en  -                        
                         </Typography>
                         <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN}>
-                            <LinkedInIcon fontSize='large'/>
+                            <LinkedInIcon 
+                                className={'tw-ease-in tw-transition tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
+                                fontSize='large'
+                            />
                         </Link>
                         <Link href={socialUrls.INSTAGRAM} color={socialColors.INSTAGRAM}>
-                            <InstagramIcon fontSize='large'/>
+                            <InstagramIcon 
+                                className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
+                                fontSize='large'
+                            />
                         </Link>
                         <Link href={socialUrls.TWITTER} color={socialColors.TWITTER}>
-                            <TwitterIcon fontSize='large'/>
+                            <TwitterIcon 
+                                className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
+                                fontSize='large'
+                            />
                         </Link>
                     </Box>
                 </Grid>
@@ -63,7 +72,11 @@ const Social: React.FC = () => {
                     <Box>
                         <Typography variant='h6'>
                             Contacto -
-                            <Link href={`mailto:${contactWays.EMAIL}`} underline='none' >
+                            <Link 
+                                className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-opacity-75'} 
+                                href={`mailto:${contactWays.EMAIL}`} 
+                                underline='none' 
+                            >
                                 { ' ' + contactWays.EMAIL }
                             </Link> 
                         </Typography>
@@ -73,6 +86,8 @@ const Social: React.FC = () => {
         </Box>
     );
 }
+
+
 
 
 export { Social }

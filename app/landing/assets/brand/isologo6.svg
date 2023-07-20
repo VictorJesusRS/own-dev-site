@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="OBJECTS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 243.88 95.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_35);
+      }
+
+      .cls-2, .cls-3 {
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-size: 85.79px;
+        font-weight: 600;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #1976d2;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6, .cls-3 {
+        fill: #222;
+      }
+
+      .cls-6, .cls-4 {
+        font-family: Montserrat-Black, Montserrat;
+        font-size: 38.36px;
+        font-weight: 800;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_35" data-name="Degradado sin nombre 35" x1="31.18" y1="51.76" x2="121.44" y2="51.76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1976d2"/>
+      <stop offset=".99" stop-color="#1976d2"/>
+    </linearGradient>
+  </defs>
+  <text class="cls-3" transform="translate(0 72.92)"><tspan x="0" y="0">{</tspan></text>
+  <text class="cls-2" transform="translate(212.13 72.92)"><tspan x="0" y="0">}</tspan></text>
+  <text class="cls-6" transform="translate(122.37 64.88)"><tspan x="0" y="0">RISE</tspan></text>
+  <g>
+    <text class="cls-4" transform="translate(31.91 64.88)"><tspan class="cls-5" x="0" y="0">V</tspan><tspan x="29.58" y="0">IJE</tspan></text>
+    <g>
+      <path class="cls-1" d="M42.54,64.88l-11.35-26.85h9.74l9.25,22.67h-5.79l9.51-22.67h8.9l-11.35,26.85h-8.9Z"/>
+      <path class="cls-1" d="M63.67,64.88v-26.85h9.05v26.85h-9.05Z"/>
+      <path class="cls-1" d="M83.89,65.5c-2.1,0-3.99-.34-5.68-1.02-1.69-.68-3.09-1.67-4.22-2.97l4.87-5.75c.72,.87,1.42,1.53,2.11,1.98,.69,.45,1.41,.67,2.15,.67,1.94,0,2.92-1.11,2.92-3.34v-10.2h-9.13v-6.83h18.07v16.5c0,3.68-.95,6.43-2.84,8.25-1.89,1.82-4.64,2.72-8.25,2.72Z"/>
+      <path class="cls-1" d="M108.02,58.05h13.43v6.83h-22.33v-26.85h21.83v6.83h-12.93v13.2Zm-.61-10.05h11.97v6.52h-11.97v-6.52Z"/>
+    </g>
+  </g>
+</svg>
