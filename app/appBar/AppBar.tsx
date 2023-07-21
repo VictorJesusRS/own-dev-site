@@ -20,7 +20,7 @@ import Image from 'next/image'
 
 const drawerWidth = 240;
 const logoWidthHeight = 225;
-const logoSrc = "/brand/isologo5.svg";
+const logoSrc = "/brand/isologo4.svg";
 const navItems = [
   {
     name: 'Inicio',
@@ -60,7 +60,14 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
           href={`/`} 
           underline='none' 
       >
-        <Image
+
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem'}}>
+          <span style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '40px', fontWeight: 'bolder'}}>{ '{' }</span>
+          <span  style={{ color: '#2196f3', fontSize: '20px', fontWeight: 'bolder', marginTop: '6px'}}>{ 'VICTOR' }</span>
+          <span  style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '20px', fontWeight: 'bolder', marginTop: '6px', marginLeft: '6px'}}>{ 'RIVAS' }</span>
+          <span  style={{ color: '#2196f3', fontSize: '40px', fontWeight: 'bolder'}}>{ '}' }</span>
+        </div>
+        {/* <Image
             src={logoSrc}
             width={logoWidthHeight}
             height={logoWidthHeight}
@@ -68,7 +75,7 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
             // style={{ width: 'auto', height: 'auto' }}
             style={{ width: 'auto', height: `4rem` }}
             priority
-          />
+          /> */}
       </Link>
       </Box>
       <Divider />
@@ -118,14 +125,20 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
                 underline='none' 
                 aria-label='link to home page'
             >
-              <Image
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <span style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '60px', fontWeight: 'bolder'}}>{ '{' }</span>
+                <span  style={{ color: '#2196f3', fontSize: '30px', fontWeight: 'bolder', marginTop: '6px'}}>{ 'VICTOR' }</span>
+                <span  style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '30px', fontWeight: 'bolder', marginTop: '6px', marginLeft: '6px'}}>{ 'RIVAS' }</span>
+                <span  style={{ color: '#2196f3', fontSize: '60px', fontWeight: 'bolder'}}>{ '}' }</span>
+              </div>
+              {/* <Image
                 src={logoSrc}
                 height={logoWidthHeight}
                 width={logoWidthHeight}
                 alt="logo: victor rivas"
                 style={{ width: 'auto', height: '4rem' }}
                 priority
-              />
+              /> */}
             </Link> 
        
             </Box>

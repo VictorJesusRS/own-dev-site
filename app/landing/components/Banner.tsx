@@ -11,7 +11,7 @@ import { Social } from '@/app/landing/components/Social';
 
 const Banner: React.FC = () => {
   return (
-    <Box sx={{ height: '100%'}}>
+    <Box sx={{ height: '100%', marginTop: '3rem'}}>
       <Grid 
         container spacing={2} 
         sx={{ width: '100%', height: '90%', marginBottom: '2rem'}}  
