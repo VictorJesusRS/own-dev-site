@@ -45,9 +45,9 @@ export default function RootLayout({
               <Box component="main" sx={{ p: 3, minHeight: '95%' }}>
                 <Toolbar/>
                 {children}
-                <Analytics />
               </Box>
             </div>  
+            <Analytics />
           </body>
       </ThemeProvider>
     </html>
