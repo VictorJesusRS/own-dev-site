@@ -62,10 +62,10 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
       >
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem'}}>
-          <span style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '40px', fontWeight: 'bolder'}}>{ '{' }</span>
-          <span  style={{ color: '#2196f3', fontSize: '20px', fontWeight: 'bolder', marginTop: '6px'}}>{ 'VICTOR' }</span>
-          <span  style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '20px', fontWeight: 'bolder', marginTop: '6px', marginLeft: '6px'}}>{ 'RIVAS' }</span>
-          <span  style={{ color: '#2196f3', fontSize: '40px', fontWeight: 'bolder'}}>{ '}' }</span>
+          <span style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '3rem', fontWeight: 'bolder'}}>{ '{' }</span>
+          <span  style={{ color: '#2196f3', fontSize: '1.25rem', fontWeight: 'bolder', marginTop: '6px'}}>{ 'VICTOR' }</span>
+          <span  style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '1.25rem', fontWeight: 'bolder', marginTop: '6px', marginLeft: '6px'}}>{ 'RIVAS' }</span>
+          <span  style={{ color: '#2196f3', fontSize: '3rem', fontWeight: 'bolder'}}>{ '}' }</span>
         </div>
         {/* <Image
             src={logoSrc}
@@ -126,10 +126,10 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
                 aria-label='link to home page'
             >
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <span style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '60px', fontWeight: 'bolder'}}>{ '{' }</span>
-                <span  style={{ color: '#2196f3', fontSize: '30px', fontWeight: 'bolder', marginTop: '6px'}}>{ 'VICTOR' }</span>
-                <span  style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '30px', fontWeight: 'bolder', marginTop: '6px', marginLeft: '6px'}}>{ 'RIVAS' }</span>
-                <span  style={{ color: '#2196f3', fontSize: '60px', fontWeight: 'bolder'}}>{ '}' }</span>
+                <span style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '4rem', fontWeight: 'bolder'}}>{ '{' }</span>
+                <span  style={{ color: '#2196f3', fontSize: '2rem', fontWeight: 'bolder', marginTop: '6px'}}>{ 'VICTOR' }</span>
+                <span  style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '2rem', fontWeight: 'bolder', marginTop: '6px', marginLeft: '6px'}}>{ 'RIVAS' }</span>
+                <span  style={{ color: '#2196f3', fontSize: '4rem', fontWeight: 'bolder'}}>{ '}' }</span>
               </div>
               {/* <Image
                 src={logoSrc}
