@@ -8,7 +8,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { lightTheme } from "@/src/themes/lightTheme";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import './globals.css'
-import BannerImg from '@/app/landing/assets/imgs/2.svg'
 
 const lato = Lato({
   weight: ['300', '400', '700'],
@@ -33,7 +32,7 @@ export default function RootLayout({
         <meta property="og:title" content="Victor Rivas | Desarrollador Full Stack"/> 
         <meta property="og:description" content="Automatiza, agiliza y posicionate en la web con mis servicios de consultoría y desarrollos a medida"/>
         <meta property="og:type" content="website"/> 
-        <meta property="og:img" content={BannerImg}/> 
+        <meta property="og:image" content={'/imgs/page-preview.png'}/> 
       </head>
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
