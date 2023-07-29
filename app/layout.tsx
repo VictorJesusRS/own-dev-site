@@ -32,7 +32,7 @@ export default function RootLayout({
         <meta property="og:title" content="Victor Rivas | Desarrollador Full Stack"/> 
         <meta property="og:description" content="Automatiza, agiliza y posicionate en la web con mis servicios de consultoría y desarrollos a medida"/>
         <meta property="og:type" content="website"/> 
-        <meta property="og:image" content={'/imgs/page-preview.png'}/> 
+        <meta property="og:image" content={'https://victorjesusrs.vercel.app/imgs/page-preview.png'}/> 
       </head>
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
