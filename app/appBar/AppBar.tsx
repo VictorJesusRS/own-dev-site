@@ -104,7 +104,7 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
         > 
           <Box
             sx={{ 
-              gap: 10, px: { md: 4}, py:1, display: 'flex', 
+              gap: { md: 10 }, px: { md: 4}, py:1, display: 'flex', 
               justifyContent: 'space-between', alignItems:'center',
               width: '100%',
             }}
