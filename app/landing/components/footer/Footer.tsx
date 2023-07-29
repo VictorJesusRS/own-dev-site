@@ -13,12 +13,12 @@ const Footer: React.FC = () => {
     return (
         <Box>
             <Box
-                sx={{ py: '2rem' }}
+                sx={{ pt: '2rem'}}
                 id="contact"
             >
                 <Social/>
             </Box>
-            <Box
+            {/* <Box
                 sx={{ my: '1rem' }}
             >
                 <Typography variant='body1' textAlign={'center'}>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                         {' Victor Rivas'}
                     </Link> 
                 </Typography>
-            </Box>
+            </Box> */}
         </Box>
     )
 }
