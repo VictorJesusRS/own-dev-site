@@ -15,7 +15,13 @@ import { contactWays  } from '@/app/constants/contact.enums'
 
 const Social: React.FC = () => {
     return (
-        <Box>
+        <Box
+            sx={{
+                backgroundColor: '#000000de',
+                borderRadius: '2rem',
+                padding: '2rem',
+            }}
+        >
             <Grid
                 container
                 columns={{ xs: 12, md: 12}}
@@ -36,7 +42,7 @@ const Social: React.FC = () => {
                             gap: '0.5rem'
                         }}
                     >
-                        <Typography variant='h6' fontWeight={'bold'}>
+                        <Typography variant='h6' fontWeight={'bold'} color={'white'}>
                             Sigueme en  -                        
                         </Typography>
                         <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN}>
@@ -70,11 +76,11 @@ const Social: React.FC = () => {
                     }}
                 >
                     <Box>
-                        <Typography variant='h6' fontWeight={'bold'}>
+                        <Typography variant='h6' fontWeight={'bold'} color={'white'}>
                             Contacto -
                             <Link 
                                 className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-opacity-75'} 
-                                color={'#0f3775'}
+                                color={'lightgray'}
                                 href={`mailto:${contactWays.EMAIL}`} 
                                 underline='none' 
                             >

@@ -75,15 +75,8 @@ const Banner: React.FC = () => {
           </Box>
         </Grid>
       </Grid>
-      <Box
-        sx={{
-          backgroundColor: 'rgba(0,0,0,0.05)',
-          borderRadius: '2rem',
-          padding: '2rem',
-        }}
-      >
-        <Social/>
-      </Box>
+  
+      <Social/>
     </Box>
   )
 }

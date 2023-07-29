@@ -13,18 +13,10 @@ const Footer: React.FC = () => {
     return (
         <Box>
             <Box
-                sx={{ backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '2rem', paddingX: '2rem' }}
+                sx={{ py: '2rem' }}
+                id="contact"
             >
-                <Box
-                    sx={{ py: '2rem' }}
-                    id="contact"
-                >
-                    <Box>
-                        <Social/>
-                    </Box>
-                    
-                </Box>
-                
+                <Social/>
             </Box>
             <Box
                 sx={{ my: '1rem' }}
