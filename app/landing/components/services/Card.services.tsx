@@ -13,7 +13,7 @@ interface additionalProps {
   rightImg: boolean,
 };
 
-const CardService: React.FC<additionalProps> = ( { model, rightImg, }) => {
+const CardService: React.FC<additionalProps> = ( { model, rightImg }) => {
   return (
 
       <Box
@@ -21,9 +21,6 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg, }) => {
           display: { xs: 'block', md: 'flex'}, 
           justifyContent:'center', 
           flexDirection: (rightImg) ? 'row-reverse' : 'row',
-          borderRadius: '2rem 2rem 2rem 2rem',
-          border: '1px solid rgba(0,0,0,0.1)',
-          marginBottom: '1rem'
         }}
       >
           {/* <CardMedia
@@ -40,7 +37,7 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg, }) => {
               height: 'auto',
               backgroundColor: '#2196f3',
               padding: '2rem',
-              borderRadius: (rightImg) ? '0rem 2rem 2rem 0rem' : '2rem 0rem 0rem 2rem',
+              borderRadius: '2rem 2rem 2rem 2rem'
             }}
           >
             <Image
@@ -58,8 +55,9 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg, }) => {
              sx={{ 
               width: { xs: '100%', md: '50%'}, 
               padding: '2rem',
-              backgroundColor: 'white',
-              borderRadius: (rightImg) ?  '2rem 0rem 0rem 2rem' : '0rem 2rem 2rem 0rem',
+              border: '1px solid rgba(0,0,0,0.1)',
+              borderRadius: '2rem 2rem 2rem 2rem',
+              backgroundColor: 'white'
             }}
           >
             <Typography 
