@@ -74,6 +74,7 @@ const Social: React.FC = () => {
                             Contacto -
                             <Link 
                                 className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-opacity-75'} 
+                                color={'#0f3775'}
                                 href={`mailto:${contactWays.EMAIL}`} 
                                 underline='none' 
                             >
