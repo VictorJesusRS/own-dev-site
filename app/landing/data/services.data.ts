@@ -12,17 +12,22 @@ import SupportImg from '@/app/landing/assets/imgs/services/support.svg'
 export const serviceBenefitData : Array<ServiceBenefit> = [
     {
         title: 'Desarrollos a Medida',
-        subtitle: `Brindo soluciones de Software a medida de las necesidades de su empresa. 
-        Evalúo cuál es la solución tecnológica más adecuada para la 
-        resolución de problemas, mejora y automatización de procesos, modelos de negocio basado en software
-        (como una tienda en línea), entre otros.`,
+        subtitle: `Un sitio web personalizado puede proporcionar una serie de beneficios sobre uno estándar. 
+        Si bien un sitio web estándar puede ser más económico a corto plazo, un sitio web personalizado se puede adaptar 
+        a sus necesidades y objetivos específicos. Puede proporcionar un diseño único, una funcionalidad mejorada y una mejor experiencia 
+        de usuario. Además, un sitio web personalizado se puede optimizar para los motores de búsqueda, lo que puede ayudar a aumentar el 
+        tráfico y la visibilidad. En última instancia, la inversión en un sitio web personalizado puede dar sus frutos a largo plazo al ayudar a
+        atraer y retener clientes e impulsar su negocio.`,
         thumb: Custom2Img
     },
     {
         title: 'Consultoría Tecnológica',
-        subtitle: `Actúo como socio informático de su empresa, brindando
-         asesoramiento y apoyo en las decisiones estratégicas 
-         relacionadas con las tecnologías de la información y procesos.`,
+        subtitle: `La consultoría aporta conocimientos y experiencia que pueden no 
+        existir dentro de su equipo actual. También puede ayudar a identificar áreas en 
+        las que se puede aprovechar la tecnología para mejorar los procesos comerciales y 
+        aumentar la eficiencia. Además, los consultores de TI pueden ayudar a garantizar que 
+        su organización utilice la tecnología más actualizada y segura, lo que puede ser 
+        fundamental en el panorama digital actual.`,
         thumb: ConsultingImg
     },
 
@@ -45,17 +50,22 @@ export const serviceBenefitData : Array<ServiceBenefit> = [
 const serviceBenefitDataOld : Array<ServiceBenefit> = [
     {
         title: 'Desarrollos a Medida',
-        subtitle: `Brindamos soluciones de Software a medida de las necesidades de su empresa. 
-        Evaluamos cuál es la solución tecnológica más adecuada para la 
-        resolución del problema, diseñando e implementando la misma como producto de 
-        un análisis previo tendiente a arribar a la mejor solución.`,
+        subtitle: `Un sitio web personalizado puede proporcionar una serie de beneficios sobre uno estándar. 
+        Si bien un sitio web estándar puede ser más económico a corto plazo, un sitio web personalizado se puede adaptar 
+        a sus necesidades y objetivos específicos. Puede proporcionar un diseño único, una funcionalidad mejorada y una mejor experiencia 
+        de usuario. Además, un sitio web personalizado se puede optimizar para los motores de búsqueda, lo que puede ayudar a aumentar el 
+        tráfico y la visibilidad. En última instancia, la inversión en un sitio web personalizado puede dar sus frutos a largo plazo al ayudar a
+        atraer y retener clientes e impulsar su negocio.`,
         thumb: Custom2Img
     },
     {
-        title: 'Consultoría Tecnológica',
-        subtitle: `Actuamos como socios tecnológicos de su empresa, brindando
-         asesoramiento y apoyo en las decisiones estratégicas 
-         relacionadas con tecnología y procesos.`,
+        title: 'Consultoría en Tecnológias de la información',
+        subtitle: `La consultoría aporta conocimientos y experiencia que pueden no 
+        existir dentro de su equipo actual. También puede ayudar a identificar áreas en 
+        las que se puede aprovechar la tecnología para mejorar los procesos comerciales y 
+        aumentar la eficiencia. Además, los consultores de TI pueden ayudar a garantizar que 
+        su organización utilice la tecnología más actualizada y segura, lo que puede ser 
+        fundamental en el panorama digital actual.`,
         thumb: ConsultingImg
     },
 
