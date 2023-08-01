@@ -38,31 +38,37 @@ const Social: React.FC = () => {
                     <Box
                         sx={{ 
                             display: 'flex', 
-                            alignItems: 'center', 
+                            alignItems: 'center',
+                            justifyContent: { xs: 'center' }, 
+                            flexDirection: { xs: 'column', md: 'row'},
                             gap: '0.5rem'
                         }}
                     >
                         <Typography variant='h6' fontWeight={'bold'} color={'white'}>
-                            Sigueme en  -                        
+                            Sigueme en                       
                         </Typography>
-                        <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN}>
-                            <LinkedInIcon 
-                                className={'tw-ease-in tw-transition tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
-                                fontSize='large'
-                            />
-                        </Link>
-                        <Link href={socialUrls.INSTAGRAM} color={socialColors.INSTAGRAM}>
-                            <InstagramIcon 
-                                className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
-                                fontSize='large'
-                            />
-                        </Link>
-                        <Link href={socialUrls.TWITTER} color={socialColors.TWITTER}>
-                            <TwitterIcon 
-                                className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
-                                fontSize='large'
-                            />
-                        </Link>
+                        <Box>
+
+                            <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN}>
+                                <LinkedInIcon 
+                                    className={'tw-ease-in tw-transition tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
+                                    fontSize='large'
+                                />
+                            </Link>
+                            <Link href={socialUrls.INSTAGRAM} color={socialColors.INSTAGRAM}>
+                                <InstagramIcon 
+                                    className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
+                                    fontSize='large'
+                                />
+                            </Link>
+                            <Link href={socialUrls.TWITTER} color={socialColors.TWITTER}>
+                                <TwitterIcon 
+                                    className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
+                                    fontSize='large'
+                                />
+                            </Link>
+                        </Box>
+
                     </Box>
                 </Grid>
                 <Grid 
@@ -75,9 +81,19 @@ const Social: React.FC = () => {
                         justifyContent: { xs: 'center', md: 'right'} 
                     }}
                 >
-                    <Box>
+                    <Box
+                        sx={{ 
+                            display: 'flex', 
+                            alignItems: 'center',
+                            justifyContent: { xs: 'center' }, 
+                            flexDirection: { xs: 'column', md: 'row'},
+                            gap: '0.5rem'
+                        }}
+                    >
                         <Typography variant='h6' fontWeight={'bold'} color={'white'}>
-                            Contacto -
+                            Contacto
+                        </Typography>
+                        <Typography variant='h6' fontWeight={'bold'}>
                             <Link 
                                 className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-opacity-75'} 
                                 color={'lightgray'}

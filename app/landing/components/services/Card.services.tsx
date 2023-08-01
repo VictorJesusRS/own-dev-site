@@ -38,9 +38,12 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg, }) => {
               position: 'relative',
               minHeight: '20rem',
               height: 'auto',
-              backgroundColor: '#2196f3',
+              backgroundColor: '#000000de',
               padding: '2rem',
-              borderRadius: (rightImg) ? '0rem 2rem 2rem 0rem' : '2rem 0rem 0rem 2rem',
+              borderRadius: { 
+                md: (rightImg) ? '0rem 2rem 2rem 0rem' : '2rem 0rem 0rem 2rem',
+                xs: '2rem 2rem 0rem 0rem',
+              } ,
             }}
           >
             <Image
@@ -59,7 +62,10 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg, }) => {
               width: { xs: '100%', md: '50%'}, 
               padding: '2rem',
               backgroundColor: 'white',
-              borderRadius: (rightImg) ?  '2rem 0rem 0rem 2rem' : '0rem 2rem 2rem 0rem',
+              borderRadius: { 
+                md: (rightImg) ?  '2rem 0rem 0rem 2rem' : '0rem 2rem 2rem 0rem',
+                xs: '2rem',
+              }
             }}
           >
             <Typography 

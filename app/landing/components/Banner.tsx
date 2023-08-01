@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Unstable_Grid2';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -11,12 +10,11 @@ import { Social } from '@/app/landing/components/Social';
 
 const Banner: React.FC = () => {
   return (
-    <Box sx={{ height: '100%', marginTop: '3rem'}}>
+    <Box sx={{ height: '100%', }}>
       <Grid 
         container spacing={2} 
-        sx={{ width: '100%', height: '90%', marginBottom: '2rem'}}  
+        sx={{ width: '100%', height: '90%', marginBottom: '2rem', marginTop: '3rem', marginX: 'auto'}}  
         columns={{ xs: 12, md: 12}}
-        
       >
         <Grid 
           md={6}
