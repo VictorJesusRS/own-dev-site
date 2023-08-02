@@ -62,7 +62,7 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg }) => {
               backgroundColor: 'white',
               borderRadius: { 
                 md: (rightImg) ?  '2rem 0rem 0rem 2rem' : '0rem 2rem 2rem 0rem',
-                xs: '2rem',
+                xs: '0rem 0rem 2rem 2rem',
               },
               border: '1px solid rgba(0,0,0,0.1)',
 
