@@ -23,32 +23,21 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <title>Victor Rivas | Desarrollador Full Stack</title>
         <meta charSet="UTF-8"/>
+{/* 
+        <title>Victor Rivas | Desarrollador Full Stack</title>
         <meta name="description" content="Automatiza, agiliza y posicionate en la web con mis servicios de consultoría y desarrollos a medida con
         PHP, Laravel, React.js, Javascript, HTML, CSS.
         "/>
 
         <meta property="og:title" content="Victor Rivas | Desarrollador Full Stack"/> 
         <meta property="og:description" content="Automatiza, agiliza y posicionate en la web con mis servicios de consultoría y desarrollos a medida"/>
-        <meta property="og:type" content="website"/> 
+        <meta property="og:type" content="website"/>  */}
         <meta property="og:image" content={'https://victorjesusrs.vercel.app/imgs/page-preview.png'}/> 
       </head>
-      <ThemeProvider theme={lightTheme}>
-        <CssBaseline />
-          <body className={lato.className} style={{ height: '100vh' }}>
-            <div style={{ height: '100%' }}>
-              <header>
-                <AppBar />
-              </header>
-              <Box component="main" sx={{ p: 3, minHeight: '95%' }}>
-                <Toolbar/>
-                {children}
-              </Box>
-            </div>  
-            <Analytics />
-          </body>
-      </ThemeProvider>
+
+        {children}
+
     </html>
   )
 }

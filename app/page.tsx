@@ -1,25 +1,24 @@
-"use client";
 
 import { Metadata } from 'next'
-//own
-import { Banner } from '@/app/landing/components/Banner'; 
-import { LayoutService } from '@/app/landing/components/services/Layout.services';
-// import { Layout as LayoutPortfolio } from '@/app/landing/components/portfolio/Layout.portfolio';
-import { Footer } from '@/app/landing/components/footer/Footer';
 
-// export const metadata: Metadata = {
-//   title: 'Victor Rivas | Desarrollador Full stack',
-//   description: `Desarrollador de software, 
-//   especializado en administración de empresas y Saas`,
-// }
+import { Content } from '@/app/landing/components/Content';
+
+export const metadata: Metadata = {
+  title: 'Victor Rivas | Desarrollador Full Stack',
+  description: `Automatiza, agiliza y posicionate en la web con mis servicios de consultoría y desarrollos a medida con
+  PHP, Laravel, React.js, Javascript, HTML, CSS`,
+  openGraph: {
+    title: 'Victor Rivas | Desarrollador Full Stack',
+    description: 'Automatiza, agiliza y posicionate en la web con mis servicios de consultoría y desarrollos a medida',
+    type: 'website',
+    // images: 'https://victorjesusrs.vercel.app/imgs/page-preview.png',
+  },
+}
 
 export default function Home() {
   return (
     <>
-      {/* <LayoutPortfolio/> */}
-      <Banner />
-      <LayoutService/>
-      <Footer/>
+      <Content />
     </>
   )
 }
