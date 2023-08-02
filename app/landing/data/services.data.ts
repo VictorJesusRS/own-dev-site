@@ -21,7 +21,7 @@ export const serviceBenefitData : Array<ServiceBenefit> = [
         thumb: Custom2Img
     },
     {
-        title: 'Consultoría Tecnológica',
+        title: 'Consultoría en Tecnológias de la Información',
         subtitle: `La consultoría aporta conocimientos y experiencia que pueden no 
         existir dentro de su equipo actual. También puede ayudar a identificar áreas en 
         las que se puede aprovechar la tecnología para mejorar los procesos comerciales y 

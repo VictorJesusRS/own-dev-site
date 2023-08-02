@@ -40,7 +40,8 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg }) => {
               borderRadius: { 
                 md: (rightImg) ? '0rem 2rem 2rem 0rem' : '2rem 0rem 0rem 2rem',
                 xs: '2rem 2rem 0rem 0rem',
-              } ,
+              },
+              border: '1px solid rgba(0,0,0,0.1)',
             }}
           >
             <Image
@@ -62,7 +63,9 @@ const CardService: React.FC<additionalProps> = ( { model, rightImg }) => {
               borderRadius: { 
                 md: (rightImg) ?  '2rem 0rem 0rem 2rem' : '0rem 2rem 2rem 0rem',
                 xs: '2rem',
-              }
+              },
+              border: '1px solid rgba(0,0,0,0.1)',
+
             }}
           >
             <Typography 

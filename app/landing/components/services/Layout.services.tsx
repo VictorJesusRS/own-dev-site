@@ -33,10 +33,15 @@ const LayoutService: React.FC = () => {
                             xs={12} 
                             sx={{ py: { xs: 'none', md: 'none'}}}
                         >
-                            <CardService 
-                                model={item}
-                                rightImg={ !!!(index % 2) }
-                            />
+                            <Box
+                                sx={{ marginBottom: '2rem' }}
+                            >
+                                <CardService 
+                                    model={item}
+                                    rightImg={ !!!(index % 2) }
+                                />
+                            </Box>
+                           
 
                             {
                                 // index !== (serviceBenefits.length - 1) && (
