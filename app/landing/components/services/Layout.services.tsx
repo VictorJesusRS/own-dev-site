@@ -11,6 +11,39 @@ import { serviceBenefitData } from '@/app/landing/data/services.data';
 const LayoutService: React.FC = () => {
     const [ serviceBenefits, setServiceBenefits] = React.useState(serviceBenefitData);
     const products: Array<string> = [];
+
+    let options = {
+        root: document.querySelector("#scrollArea"),
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+      
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const intersecting = entry.isIntersecting
+            if (intersecting && entry.target.classList.contains('animate')) {
+
+                if (entry.target.classList.contains('a-in-right')) {
+                    entry.target.classList.add('in-right') 
+                } else if (entry.target.classList.contains('a-in-left')) {
+                    entry.target.classList.add('in-left') 
+                }
+                entry.target.classList.remove('animate') 
+            }
+          })
+    }, options);
+
+    React.useEffect(() => {
+        serviceBenefits.map((item, index) => {
+            let target = document.querySelector(`#service-${index}`);
+            if (target) {
+                observer.observe(target);
+            }
+        })
+    }, [])
+
+
+      
     return (
     <Box id="services" component={'section'} sx={{ paddingBottom: '2rem'}}>
         <Box
@@ -26,6 +59,9 @@ const LayoutService: React.FC = () => {
         >
             {
                 serviceBenefits.map((item, index) =>  {
+
+                    const rightImg = !!!(index % 2);
+
                     return (        
                         <Grid
                             key={item.title}
@@ -35,10 +71,12 @@ const LayoutService: React.FC = () => {
                         >
                             <Box
                                 sx={{ marginBottom: '2rem' }}
+                                className={ rightImg ? 'a-in-right animate' : 'a-in-left animate' }
+                                id={ `service-${index}`}
                             >
                                 <CardService 
                                     model={item}
-                                    rightImg={ !!!(index % 2) }
+                                    rightImg={ rightImg }
                                 />
                             </Box>
                            

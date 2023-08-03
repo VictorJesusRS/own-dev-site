@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
+    <html lang="es" style={{scrollBehavior:'smooth'}} id="scrollArea">
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta charSet="UTF-8"/>

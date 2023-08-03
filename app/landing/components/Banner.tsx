@@ -33,7 +33,7 @@ const Banner: React.FC = () => {
           <Box padding={{ md: 6 }}>
             <Box>
               <Typography variant='h1' component={'h1'} sx={{textAlign: {xs: 'center', md: 'left'}}}  gutterBottom>
-                Desarrollo web enfocado a negocios
+                Desbloquea tu potencial en línea
               </Typography>
             </Box>
             <Box>
@@ -42,7 +42,6 @@ const Banner: React.FC = () => {
               color={'white'}
               fontWeight={'bold'}
               sx={{textAlign: {xs: 'center', md: 'left'}}}
-              component={'h2'}
               >
                 ¡Automatiza, agiliza y posicionate en la web!   
               </Typography>  
