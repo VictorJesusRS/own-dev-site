@@ -12,35 +12,39 @@ const LayoutService: React.FC = () => {
     const [ serviceBenefits, setServiceBenefits] = React.useState(serviceBenefitData);
     const products: Array<string> = [];
 
-    let options = {
-        root: document.querySelector("#scrollArea"),
-        rootMargin: "0px",
-        threshold: 0.1,
-      };
-      
-    let observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            const intersecting = entry.isIntersecting
-            if (intersecting && entry.target.classList.contains('animate')) {
 
-                if (entry.target.classList.contains('a-in-right')) {
-                    entry.target.classList.add('in-right') 
-                } else if (entry.target.classList.contains('a-in-left')) {
-                    entry.target.classList.add('in-left') 
+
+    React.useEffect(() => { 
+        
+        let options = {
+            // root: document.querySelector("#scrollArea"),
+            rootMargin: "0px",
+            threshold: 0.5,
+        };
+        let observer = new IntersectionObserver((entries) => {
+            console.log('reach', true)
+            entries.forEach(entry => {
+                const intersecting = entry.isIntersecting
+                if (intersecting && entry.target.classList.contains('animate')) {
+
+                    if (entry.target.classList.contains('a-in-right')) {
+                        entry.target.classList.add('in-right') 
+                    } else if (entry.target.classList.contains('a-in-left')) {
+                        entry.target.classList.add('in-left') 
+                    }
+                    entry.target.classList.remove('animate') 
+                    observer.unobserve(entry.target);
                 }
-                entry.target.classList.remove('animate') 
-            }
-          })
-    }, options);
+            })
+        });
 
-    React.useEffect(() => {
         serviceBenefits.map((item, index) => {
             let target = document.querySelector(`#service-${index}`);
             if (target) {
                 observer.observe(target);
             }
-        })
-    }, [])
+        }, options)
+    }, [serviceBenefits])
 
 
       
