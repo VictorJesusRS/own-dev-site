@@ -22,17 +22,15 @@ const LayoutService: React.FC = () => {
             threshold: 0.5,
         };
         let observer = new IntersectionObserver((entries) => {
-            console.log('reach', true)
             entries.forEach(entry => {
                 const intersecting = entry.isIntersecting
-                if (intersecting && entry.target.classList.contains('animate')) {
+                if (intersecting) {
 
                     if (entry.target.classList.contains('a-in-right')) {
                         entry.target.classList.add('in-right') 
                     } else if (entry.target.classList.contains('a-in-left')) {
                         entry.target.classList.add('in-left') 
                     }
-                    entry.target.classList.remove('animate') 
                     observer.unobserve(entry.target);
                 }
             })
@@ -75,7 +73,7 @@ const LayoutService: React.FC = () => {
                         >
                             <Box
                                 sx={{ marginBottom: '2rem' }}
-                                className={ rightImg ? 'a-in-right animate' : 'a-in-left animate' }
+                                className={ rightImg ? 'a-in-right' : 'a-in-left' }
                                 id={ `service-${index}`}
                             >
                                 <CardService 
