@@ -49,24 +49,24 @@ const Social: React.FC = () => {
                         </Typography>
                         <Box>
 
-                            <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN} aria-label='perfil de linkedin'>
+                            {/* <Link href={socialUrls.LINKEDIN} color={socialColors.LINKEDIN} aria-label='perfil de linkedin'>
                                 <LinkedInIcon 
                                     className={'tw-ease-in tw-transition tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
                                     fontSize='large'
                                 />
-                            </Link>
+                            </Link> */}
                             <Link href={socialUrls.INSTAGRAM} color={socialColors.INSTAGRAM}  aria-label='perfil de instagram'> 
                                 <InstagramIcon 
                                     className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
                                     fontSize='large'
                                 />
                             </Link>
-                            <Link href={socialUrls.TWITTER} color={socialColors.TWITTER}  aria-label='perfil de twitter'>
+                            {/* <Link href={socialUrls.TWITTER} color={socialColors.TWITTER}  aria-label='perfil de twitter'>
                                 <TwitterIcon 
                                     className={'tw-ease-in tw-transition  tw-duration-300 hover:tw-scale-125 hover:tw-opacity-75'} 
                                     fontSize='large'
                                 />
-                            </Link>
+                            </Link> */}
                         </Box>
 
                     </Box>

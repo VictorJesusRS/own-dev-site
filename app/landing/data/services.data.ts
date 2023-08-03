@@ -35,7 +35,7 @@ export const serviceBenefitData : Array<ServiceBenefit> = [
     // },
     {
         title: 'Consultoría en Tecnológias de la Información',
-        subtitle: `La consultoría aporta conocimientos y experiencia que pueden no 
+        subtitle: `Aporta conocimientos y experiencia que pueden no 
         existir dentro de su equipo actual. También puede ayudar a identificar áreas en 
         las que se puede aprovechar la tecnología para mejorar los procesos comerciales y 
         aumentar la eficiencia. Además, los consultores de TI pueden ayudar a garantizar que 
@@ -46,7 +46,7 @@ export const serviceBenefitData : Array<ServiceBenefit> = [
 
     {
         title: 'Soporte y Mantenimiento',
-        subtitle: `Este servicio ofrece el buen funcionamiento de la infraestructura de informática, 
+        subtitle: `Ofrece el buen funcionamiento de la infraestructura de informática, 
         comunicación optimizada, reducción de costos, uniformidad, resolución de incidentes más rápida,
          acceso a experiencia y detección proactiva de problemas.`,
         thumb: SupportImg

@@ -1,5 +1,5 @@
 enum socialUrls {
-    INSTAGRAM = 'https://www.instagram.com/victorjesusrs/',
+    INSTAGRAM = 'https://www.instagram.com/victor_rivas_dev/',
     TWITTER = 'https://twitter.com/VictorJesusRS',
     LINKEDIN = 'https://www.linkedin.com/in/victorjesusrs/',
 }
