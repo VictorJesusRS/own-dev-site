@@ -42,6 +42,7 @@ const Banner: React.FC = () => {
               color={'white'}
               fontWeight={'bold'}
               sx={{textAlign: {xs: 'center', md: 'left'}}}
+              component={'h2'}
               >
                 ¡Automatiza, agiliza y posicionate en la web!   
               </Typography>  

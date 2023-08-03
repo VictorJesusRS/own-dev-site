@@ -59,6 +59,7 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
       <Link 
           href={`/`} 
           underline='none' 
+          aria-label='pagina de inicio'
       >
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem'}}>
@@ -83,7 +84,7 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
             <ListItemButton className='tw-flex tw-justify-center'>
-              <Link href={item.path} underline="none" color={'inherit'} aria-label='link to home page'>
+              <Link href={item.path} underline="none" color={'inherit'} aria-label='pagina de inicio'>
                 <Typography >
                   {item.name}
                 </Typography>
@@ -123,7 +124,7 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
             <Link 
                 href={`/`} 
                 underline='none' 
-                aria-label='link to home page'
+                aria-label='pagina de inicio'
             >
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <span style={{ color: 'rgba(0, 0, 0, 0.87)', fontSize: '4rem', fontWeight: 'bolder'}}>{ '{' }</span>
@@ -154,7 +155,7 @@ const DrawerAppBar: React.FC<React.PropsWithChildren> = ({children}) => {
                 }}
                 color={'inherit'}
                 >
-                  <Link href={item.path} underline="none" color={'inherit'}>
+                  <Link href={item.path} underline="none" color={'inherit'}  aria-label={`seccion de ${item.name}`}>
                     <Typography>
                       {item.name}
                     </Typography>
