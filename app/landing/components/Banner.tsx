@@ -13,7 +13,16 @@ const Banner: React.FC = () => {
     <Box sx={{ height: '100%', }}>
       <Grid 
         container spacing={2} 
-        sx={{ width: '100%', height: '90%', marginBottom: '2rem', marginTop: '3rem', marginX: 'auto'}}  
+        sx={{ 
+          width: '100%', 
+          height: '90%',
+          marginBottom: '2rem', 
+          marginTop: '3rem', 
+          marginX: 'auto',
+          backgroundImage: 'linear-gradient(.25turn, #2196f3, 50%, white)',
+          borderRadius: '2rem'
+      
+        }}  
         columns={{ xs: 12, md: 12}}
       >
         <Grid 
@@ -24,7 +33,6 @@ const Banner: React.FC = () => {
             display: 'flex', 
             alignItems: 'center', 
             justifyContent: 'center',
-            backgroundColor: '#2196f3',
             borderRadius: '2rem',
             paddingX: { xs: '2rem', md: '4rem'},
             paddingY: { xs: '2rem', md:'none'}
