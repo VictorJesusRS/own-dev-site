@@ -19,7 +19,10 @@ const Banner: React.FC = () => {
           marginBottom: '2rem', 
           marginTop: '3rem', 
           marginX: 'auto',
-          backgroundImage: 'linear-gradient(.25turn, #2196f3, 50%, white)',
+          backgroundImage: { 
+            xs: 'linear-gradient( to bottom, #2196f3, 50%, white)',
+            md: 'linear-gradient(.25turn, #2196f3, 50%, white)',
+          },
           borderRadius: '2rem'
       
         }}  

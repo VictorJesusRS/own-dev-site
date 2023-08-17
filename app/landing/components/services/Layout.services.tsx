@@ -25,12 +25,18 @@ const LayoutService: React.FC = () => {
             entries.forEach(entry => {
                 const intersecting = entry.isIntersecting
                 if (intersecting) {
-
-                    if (entry.target.classList.contains('a-in-right')) {
-                        entry.target.classList.add('in-right') 
-                    } else if (entry.target.classList.contains('a-in-left')) {
-                        entry.target.classList.add('in-left') 
+                    if (window.screen.width >= 900) {
+                        if (entry.target.classList.contains('a-in-right')) {
+                            entry.target.classList.add('in-right') 
+                        } else if (entry.target.classList.contains('a-in-left')) {
+                            entry.target.classList.add('in-left') 
+                        }
+                    }else{
+                        if (entry.target.classList.contains('a-in-bottom')) {
+                            entry.target.classList.add('in-bottom') 
+                        } 
                     }
+
                     observer.unobserve(entry.target);
                 }
             })
@@ -73,7 +79,7 @@ const LayoutService: React.FC = () => {
                         >
                             <Box
                                 sx={{ marginBottom: '2rem' }}
-                                className={ rightImg ? 'a-in-right' : 'a-in-left' }
+                                className={ rightImg ? 'a-in-right a-in-bottom' : 'a-in-left a-in-bottom' }
                                 id={ `service-${index}`}
                             >
                                 <CardService 

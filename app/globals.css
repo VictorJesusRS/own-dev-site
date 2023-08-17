@@ -74,7 +74,7 @@
 }
 
 
-/** fadeInLeft **/
+/** fadeInRight **/
 
 @-webkit-keyframes fadeInRight {
     from {
@@ -143,6 +143,77 @@
     animation-delay: 0.5s;
 }
 
-.a-in-right, .a-in-left {
+.a-in-right, .a-in-left, .a-in-bottom {
     opacity: 0;
+}
+
+
+
+/** fadeInBottom **/
+
+@-webkit-keyframes fadeInBottom {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(10px);
+        -moz-transform: translatey(10px);
+        -o-transform: translatey(10px);
+        transform: translatey(10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@-moz-keyframes fadeInBottom {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(10px);
+        -moz-transform: translatey(10px);
+        -o-transform: translatey(10px);
+        transform: translatey(10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@keyframes fadeInBottom {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(10px);
+        -moz-transform: translatey(10px);
+        -o-transform: translatey(10px);
+        transform: translatey(10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+.in-bottom {
+    -webkit-animation-name: fadeInBottom;
+    -moz-animation-name: fadeInBottom;
+    -o-animation-name: fadeInBottom;
+    animation-name: fadeInBottom;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-duration:0.5s;
+    animation-delay: 0.5s;
 }
